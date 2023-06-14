@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import RandomOverSampler
 
 cols = ["flength","fwidth","fSize","fConc","fConci","fAaym","fMJLong","fMKTrans","fAlpha","fDist","class"]
-df = pd.read_csv("magic04.data",names=cols)
+df = pd.read_csv("Magic ML.data",names=cols)
 print(df)
 
 df["class"] = (df["class"] == "g").astype(int)
